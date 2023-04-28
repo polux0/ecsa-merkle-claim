@@ -6,9 +6,8 @@ async function main() {
   const {ecsaERC20Address, root, adminWithdrawalTimestamp} = {
     ecsaERC20Address: '0x0f46D83A1E53829453262AAb4DB70144d364D25f',
     root: '0xf9769d32f000668255ae0eb16cfb6ab3138a1e93c0f6cda963e62cbc8a8dae4c',
-    adminWithdrawalTimestamp: Math.floor(Date.now() / 1000) + 300 // timestamp at the moment of deployment + 10 minutes
+    adminWithdrawalTimestamp: Math.floor((new Date().setFullYear(new Date().getFullYear() + 1)) / 1000) // timestamp at the moment of deployment + 1 year
   }
-    
   console.log(`\n🤖 deployer address ${deployer.address}\n`)
 
   // Deploy the MerkleClaimERC20
