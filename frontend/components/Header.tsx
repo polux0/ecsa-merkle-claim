@@ -52,13 +52,15 @@ export default function Header() {
       <div className={styles.header__logo}>
         <Link href="/">
           <a>
-            <Image src="/logo.svg" alt="Logo" width={116} height={43} priority style={{
-              display: 'block',
-              maxWidth: '100%',
-              height: 'auto',
-              width: '100%',
-              maxHeight: '43px',
-            }}/>
+            <Image src="/logo.svg" alt="Logo" width={116} height={43} 
+            // style={{
+            //   display: 'block',
+            //   maxWidth: '100%',
+            //   height: 'auto',
+            //   width: '100%',
+            //   maxHeight: '43px',
+            // }}
+            />
           </a>
         </Link>
       </div>
