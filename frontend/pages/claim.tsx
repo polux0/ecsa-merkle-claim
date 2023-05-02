@@ -52,7 +52,8 @@ export default function Claim() {
           // Not part of airdrop
           <div className={styles.card}>
             <h1>You do not qualify.</h1>
-            <p>Unfortunately, your address does not qualify for the airdrop.</p>
+            <p>Unfortunately, your address does not qualify for the airdrop. If you would like to join the ECSA token presale whitelist please fill in this <a href='https://tally.so/r/meMdqe' style={{color: 'blue'}}>form.</a></p>
+            
           </div>
         ) : alreadyClaimed ? (
           // Already claimed airdrop
