@@ -68,8 +68,10 @@ export default function Claim() {
           <div className={styles.card}>
             <h1>Claim your airdrop.</h1>
             <p>Your address qualifies for {numTokens} tokens.</p>
-            <button onClick={claimWithLoading} disabled={buttonLoading}>
+            <button onClick={claimWithLoading} disabled={buttonLoading} style={{backgroundColor:'black', color: 'white'}}
+            >
               {buttonLoading ? "Claiming Airdrop..." : "Claim Airdrop"}
+              
             </button>
           </div>
         )}
