@@ -19,7 +19,7 @@ export default function Layout({
       <Header />
 
       {/* Injected child content */}
-      <div className={styles.layout__content}>{children}</div>
+      <div className={styles.layout__content} style={{background: 'rgb(255, 220, 218)'}}>{children}</div>
 
       {/* Global footer */}
       <Footer />

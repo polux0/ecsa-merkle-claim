@@ -52,7 +52,13 @@ export default function Header() {
       <div className={styles.header__logo}>
         <Link href="/">
           <a>
-            <Image src="/logo.png" alt="Logo" width={58} height={58} priority />
+            <Image src="/logo.svg" alt="Logo" width={116} height={43} priority style={{
+              display: 'block',
+              maxWidth: '100%',
+              height: 'auto',
+              width: '100%',
+              maxHeight: '43px',
+            }}/>
           </a>
         </Link>
       </div>
@@ -67,6 +73,7 @@ export default function Header() {
             : // Else, render address
               `${address.substr(0, 6)}...
                     ${address.slice(address.length - 4)}`}
+                    <Image src="/icons/arrow-white.svg" alt="Arrow" height={12} width={12} />
         </button>
 
         {/* Actions button */}

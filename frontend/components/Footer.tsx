@@ -16,7 +16,7 @@ const footerLinks: { icon: string; url: string | undefined }[] = [
 
 export default function Footer() {
   return (
-    <div className={styles.footer}>
+    <div className={styles.footer} style={{textAlign: 'center'}}>
       {footerLinks.map(({ icon, url }, i) => {
         // For each link in footer that is valid
         return url ? (
