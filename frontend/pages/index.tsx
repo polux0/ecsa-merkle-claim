@@ -85,7 +85,10 @@ export default function Home() {
           </button>
         ) : (
           // Else, reroute to /claim
-          <button onClick={() => push("/claim")}>Claim Tokens</button>
+          <button onClick={() => push("/claim")}>
+            Claim Tokens
+            <Image src="/icons/arrow-white.svg" alt="Arrow" height={12} width={12} />
+          </button>
         )}
       </div>
     </Layout>
