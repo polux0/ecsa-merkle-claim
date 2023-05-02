@@ -109,11 +109,11 @@ function useToken() {
     // Collect token contract
     const token: ethers.Contract = getContract();
     // Get properly formatted address
-    const safeAddress = '0xd7E0f8E96b87819E47bCD65a1B53D52FE091f8aD';
-    const formattedAddress: string = ethers.utils.getAddress(safeAddress);
+    // const safeAddress = '0xd7E0f8E96b87819E47bCD65a1B53D52FE091f8aD';
+    const formattedAddress: string = ethers.utils.getAddress(address);
     // Get tokens for address
     const numTokens: string = ethers.utils
-      .parseUnits(config.airdrop[ethers.utils.getAddress(safeAddress)].toString(), config.decimals)
+      .parseUnits(config.airdrop[ethers.utils.getAddress(address)].toString(), config.decimals)
       .toString();
 
     // Generate hashed leaf from address
