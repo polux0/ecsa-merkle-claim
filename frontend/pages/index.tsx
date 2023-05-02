@@ -10,7 +10,7 @@ const tokenName: string = process.env.NEXT_PUBLIC_TOKEN_NAME ?? "Token Name";
 const heading: string = process.env.NEXT_PUBLIC_HEADING ?? "Some heading";
 const description: string =
   process.env.NEXT_PUBLIC_DESCRIPTION ?? "Some description";
-const explanation: string = `(1) Connect your wallet. (2) Make sure that you will have some ETH in your wallet to pay for the "gas" (the transaction fee), otherwise you won't be able to claim your tokens! (3) Sign the transaction with your the wallet. (4) If you need any help, please contact: whitelist@ecsa.io.`;
+const explanation: string = `(1) Connect your wallet. (2) Make sure that you will have some ETH in your wallet to pay for the "gas" (the transaction fee), otherwise you won't be able to claim your tokens! (3) Sign the transaction with your the wallet. (4) If you need any help, please ask in Discord #⁠whitelist or contact: whitelist@ecsa.io`;
 
 export default function Home() {
   // Routing
