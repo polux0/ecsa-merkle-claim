@@ -34,7 +34,8 @@ export default function Home() {
             padding:0,
             position:'relative',
             maxWidth:'100%'}}>
-            <Image alt="Logo" src={logo} decoding="async" data-nimg="intrinsic" style={{display:"block", maxWidth: "90%", height:"auto"}}></Image>
+            <Image alt="Logo" src={logo} decoding="async" data-nimg="intrinsic" className={styles.logoImage} 
+            ></Image>
         </span>
         </div>
         <h1 style={{ 
