@@ -58,9 +58,10 @@ export default function Claim() {
         ) : alreadyClaimed ? (
           // Already claimed airdrop
           <div className={styles.card}>
-            <h1>Already claimed.</h1>
+            <h1>Congratulations!</h1>
             <p>
-              Your address ({address}) has already claimed {numTokens} tokens.
+            You are now an ECSA token holder.
+            {/* Your address ({address}) has already claimed {numTokens} tokens. */}
             </p>
           </div>
         ) : (
