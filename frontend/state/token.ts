@@ -120,7 +120,7 @@ function useToken() {
     const leaf: Buffer = generateLeaf(formattedAddress, numTokens);
     // Generate airdrop proof
     const proof: string[] = merkleTree.getHexProof(leaf);
-    console.log('proof: ', proof)
+    // console.log('proof: ', proof)
 
     // Try to claim airdrop and refresh sync status
     try {
